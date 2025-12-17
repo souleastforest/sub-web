@@ -241,7 +241,7 @@ export default {
       options: {
         clientTypes: CLIENT_TYPES,
         backendOptions: [
-          { value: "http://114.103.157.163:25500/sub?" },
+          { value: "http://14.103.157.163:25500/sub?" },
           { value: "http://127.0.0.1:25500/sub?" }
         ],
         remoteConfig: REMOTE_CONFIGS

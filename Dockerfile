@@ -1,8 +1,8 @@
 # ---- Dependencies ----
-FROM oven/bun:alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 COPY . .
-RUN bun install
+RUN npm install -g bun && bun install
 RUN bun run build
 
 FROM nginx:1.24-alpine
