@@ -240,7 +240,10 @@ export default {
       // 配置选项
       options: {
         clientTypes: CLIENT_TYPES,
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { value: "http://114.103.157.163:25500/sub?" },
+          { value: "http://127.0.0.1:25500/sub?" }
+        ],
         remoteConfig: REMOTE_CONFIGS
       },
 

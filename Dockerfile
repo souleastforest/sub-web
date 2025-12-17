@@ -1,9 +1,9 @@
 # ---- Dependencies ----
-FROM node:22-alpine AS build
+FROM oven/bun:alpine AS build
 WORKDIR /app
 COPY . .
-RUN yarn install
-RUN yarn build
+RUN bun install
+RUN bun run build
 
 FROM nginx:1.24-alpine
 COPY --from=build /app/dist /usr/share/nginx/html

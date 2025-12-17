@@ -1,6 +1,15 @@
 // 远程配置选项
 export const REMOTE_CONFIGS = [
   {
+    label: "Local",
+    options: [
+      {
+        label: "FDUZS本地配置",
+        value: "config/fduzs_config.ini"
+      }
+    ]
+  },
+  {
     label: "universal",
     options: [
       {
